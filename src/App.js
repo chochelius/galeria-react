@@ -1,23 +1,33 @@
-import logo from './logo.svg';
+//create main App.js file importing header and footer components with card component reusing it, giving the props to the components
+import React from 'react';
 import './App.css';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Card from './components/Card';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <div className="container">
+      <Header />
+        <div className="row">
+          
+          <div className="col-md-6 ml-auto px-1 py-1">
+            <Card image="https://picsum.photos/200" title="Card 1" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus." buttontext="Ver Mas" />
+          </div>
+          <div className="col-md-6 ml-auto px-1 py-1">
+            <Card image="https://picsum.photos/200" title="Card 2" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus." buttontext="Ver Mas" />
+          </div>
+          <div className="col-md-6 ml-auto px-1 py-1">
+            <Card image="https://picsum.photos/200" title="Card 3" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus." buttontext="Ver Mas" />
+          </div>
+          <div className="col-md-6 ml-auto px-1 py-1">
+            <Card image="https://picsum.photos/200" title="Card 3" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus." buttontext="Ver Mas" />
+          </div>
+          <Footer />
+        </div>
+      </div>
     </div>
   );
 }
