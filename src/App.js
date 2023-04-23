@@ -25,7 +25,7 @@ function App() {
           <div className="col-md-6 ml-auto px-1 py-1">
             <Card image="https://picsum.photos/seed/sit/200/200" title="Tarjeta 4" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus." buttontext="Ver Mas" />
           </div>
-          <Footer />
+          <Footer text="Todos los derechos reservados" />
         </div>
       </div>
     </div>
