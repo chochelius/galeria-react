@@ -1,4 +1,3 @@
-//create main App.js file importing header and footer components with card component reusing it, giving the props to the components
 import React from 'react';
 import './App.css';
 import Header from './components/Header';
